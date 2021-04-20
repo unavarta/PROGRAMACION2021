@@ -26,3 +26,6 @@ Algoritmo tablaDEmultiplicar //TP2 - EJERCICIO 1. URIEL IAN NAVARTA TRIVEÑO.
 		Fin Mientras
 	
 FinAlgoritmo
+
+
+//TP2 - EJERCICIO 1. URIEL IAN NAVARTA TRIVEÑO.
