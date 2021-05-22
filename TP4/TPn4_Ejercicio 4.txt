@@ -1,0 +1,28 @@
+Algoritmo Contraseña_Aleatoria
+	//Sancer, Peñafort, Navarta.
+	//Convención snake_case.
+	definir contrasenia, n, z Como Entero
+	definir text Como Caracter
+	definir tamanio_arraid Como entero
+	tamanio_arraid=8 //Establecemos un valor al arraid y operamos en base a esta variable 
+				   //por si en un futuro necesitara modificarse.
+	Dimension contrasenia[tamanio_arraid]
+	
+//-----------------------------------------------------------------------//	
+	Para i=0 Hasta tamanio_arraid-1 Con Paso 1 Hacer
+		n = aleatorio(0,9) 
+		contrasenia[i] = n
+		//Utilizamos una variable n para generar los números aleatorios, y la misma variable del bucle (i) para almacenar los 
+		//valores en el arreglo.
+		Escribir "Posición : ", i+1, " | Valor aleatorio | ", "(", n, ")"
+		Escribir "_______________________________________________________"
+		//Se muestran los valores dados de forma ordenada.
+//-----------------------------------------------------------------------//	
+	Fin Para
+	Escribir "La contraseña es: "
+	para x = 0 hasta tamanio_arraid-1 con paso 1 Hacer
+		Escribir "-" Concatenar( ConvertirATexto(contrasenia[x]), ) Sin Saltar
+	//Se convierten los números a texto para poder mostrarlos en una línea. Se imprime la contraseña generada. 	
+	FinPara
+//-----------------------------------------------------------------------//
+FinAlgoritmo

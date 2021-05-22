@@ -1,0 +1,32 @@
+Algoritmo  Contador_N_primos
+	//Sancer, Peñafort, Navarta.
+	//Convención Snake_case
+    Definir tamanio_arraid, n_primos, contador Como Entero
+    tamanio_arraid= 26
+    Dimension arraid_n_primos[tamanio_arraid]
+    n_primos = 0
+	
+//----------------------------------------------------------------------------------------------------------------//
+    Para i <- 1 Hasta 100 Con Paso 1 Hacer       
+        contador = 0 //Se establece un contador que pase por todos los números, sean o no primos.
+        Para x = 1 hasta i Con Paso 1 Hacer
+			// Se descartan los números no primos, se verifican los que sí son primos.
+            Si i MOD x = 0 Entonces
+                contador = contador + 1
+            FinSi
+		FinPara
+			//Se almacena en el arraid en el caso de ser primo.
+        Si contador== 2 O i = 1 Entonces            
+            arraid_n_primos[n_primos] =i      
+			n_primos = n_primos + 1 
+        FinSi
+	FinPara
+//----------------------------------------------------------------------------------------------------------------//	
+					//Luego de la verificación se imprimen los números y su respectiva posición.
+	
+    Para x <- 0 Hasta tamanio_arraid - 1 Con Paso 1 Hacer
+        Escribir "El numero primo " arraid_n_primos[x], " se encuentra en la posición |", x,"| del arreglo"
+		Escribir "--------------------------------------------------------------------" 
+    Fin Para
+//----------------------------------------------------------------------------------------------------------------//   
+FinAlgoritmo

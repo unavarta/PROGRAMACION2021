@@ -1,0 +1,16 @@
+//Peñafort, Navarta, Sancer
+//Convención Snake_Case
+
+Algoritmo contador_pares
+	Definir i, n, cien_primeros como entero
+	Dimension cien_primeros[100]
+	n=2
+	Para i=0 Hasta 99 Con Paso 1 Hacer
+		//La variable i se incrementa en 1 para llenar los espacios del arreglo.
+		cien_primeros[i]=n
+		n=n+2
+		//La variable n se incrementa en 2 para llenar el arreglo con los números
+		//pares.
+		Escribir cien_primeros[i]
+	Fin Para
+FinAlgoritmo

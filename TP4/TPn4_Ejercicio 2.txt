@@ -1,0 +1,34 @@
+//Peñafort, Navarta, Sancer
+//Convención Snake_Case
+
+//-------------------------------------------------------------------------//
+Algoritmo Elegir_aleatorio
+	definir i, random, arreglo como entero
+	dimension arreglo[20]
+	Para i=0 Hasta 19 Con Paso 1 Hacer
+		arreglo[i] = aleatorio (0,100)
+//Se hace un contador para rellenar el arreglo con numeros aleatorios.
+//En un rango de 100.		
+		Escribir "Posición |", i+1, " | ", arreglo[i]
+
+//-------------------------------------------------------------------------//
+	Fin Para
+	Escribir"--------------------------------------------------"
+	random= aleatorio (0,100)
+//Se genera el número aleatorio a comparar	
+	escribir "El número aleatorio generado es ", random
+
+
+	para i=0 hasta 19 con paso 1 Hacer
+		si arreglo[i]= random
+//Se compara varias veces con los números del arreglo, en caso de que haya
+//coincidido más de una vez
+
+//-------------------------------------------------------------------------//
+			escribir "Lo encontró en la posición ", i+1
+		sino 
+			Escribir "Escaneando posición... ", i+1
+			Escribir "No se encontró en la posición ", i+1
+		finsi
+	FinPara		
+FinAlgoritmo
